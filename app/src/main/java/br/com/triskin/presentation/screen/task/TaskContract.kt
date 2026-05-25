@@ -24,8 +24,8 @@ sealed interface TaskListIntent {
         val talhao: String,
         val description: String,
         val priority: TaskPriority,
-        val expectedDate: LocalDate?,
-        val expectedTime: LocalTime?,
+        val expectedDate: LocalDate,
+        val expectedTime: LocalTime,
     ) : TaskListIntent
 }
 
@@ -48,10 +48,7 @@ sealed interface TaskDialog {
 internal fun TaskListIntent.SubmitForm.applyTo(
     existing: Task?,
 ): Task {
-    val date = expectedDate
-    val dueDate = if (date != null && expectedTime != null) {
-        LocalDateTime.of(date, expectedTime)
-    } else null
+    val dueDate = LocalDateTime.of(expectedDate, expectedTime)
     return existing?.copy(
         title = title.trim(),
         talhao = talhao.trim(),

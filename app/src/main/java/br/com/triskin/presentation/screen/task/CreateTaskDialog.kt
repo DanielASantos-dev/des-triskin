@@ -63,8 +63,8 @@ fun TaskFormDialog(
     var talhao by remember { mutableStateOf(initial?.talhao.orEmpty()) }
     var description by remember { mutableStateOf(initial?.description.orEmpty()) }
     var priority by remember { mutableStateOf(initial?.priority ?: TaskPriority.MEDIUM) }
-    var expectedDate by remember { mutableStateOf(initial?.dueDate?.toLocalDate()) }
-    var expectedTime by remember { mutableStateOf(initial?.dueDate?.toLocalTime()) }
+    var expectedDate by remember { mutableStateOf(initial?.dueDate?.toLocalDate() ?: LocalDate.now()) }
+    var expectedTime by remember { mutableStateOf(initial?.dueDate?.toLocalTime() ?: LocalTime.of(8, 0)) }
     var showDatePicker by remember { mutableStateOf(false) }
     var showTimePicker by remember { mutableStateOf(false) }
     var titleError by remember { mutableStateOf(false) }
@@ -123,10 +123,7 @@ fun TaskFormDialog(
                 ) {
                     Icon(Icons.Filled.CalendarMonth, contentDescription = null)
                     Spacer(Modifier.width(8.dp))
-                    Text(
-                        expectedDate?.let { "${stringResource(R.string.tasks_field_date)}: ${it.formatShort()}" }
-                            ?: stringResource(R.string.tasks_field_date),
-                    )
+                    Text("${stringResource(R.string.tasks_field_date)}: ${expectedDate.formatShort()}")
                 }
 
                 Spacer(Modifier.height(8.dp))
@@ -138,10 +135,7 @@ fun TaskFormDialog(
                 ) {
                     Icon(Icons.Filled.Schedule, contentDescription = null)
                     Spacer(Modifier.width(8.dp))
-                    Text(
-                        expectedTime?.let { "${stringResource(R.string.tasks_field_time)}: ${it.formatHm()}" }
-                            ?: stringResource(R.string.tasks_field_time),
-                    )
+                    Text("${stringResource(R.string.tasks_field_time)}: ${expectedTime.formatHm()}")
                 }
 
                 Spacer(Modifier.height(12.dp))
