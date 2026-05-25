@@ -86,6 +86,7 @@ class TaskListViewModelTest {
                 talhao = "T-12",
                 description = "",
                 priority = TaskPriority.MEDIUM,
+                expectedDate = LocalDate.of(2025, 5, 25),
                 expectedTime = LocalTime.of(8, 0),
             ),
         )
@@ -111,6 +112,7 @@ class TaskListViewModelTest {
                 talhao = "T-13",
                 description = "atualizado",
                 priority = TaskPriority.HIGH,
+                expectedDate = LocalDate.of(2025, 5, 25),
                 expectedTime = LocalTime.of(9, 0),
             ),
         )
