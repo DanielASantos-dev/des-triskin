@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Triskin</string>
+
+    <!-- Navegação -->
+    <string name="nav_tasks">Tarefas</string>
+    <string name="nav_activities">Atividades</string>
+    <string name="nav_weather">Clima</string>
+
+    <!-- Telas — comuns -->
+    <string name="action_save">Salvar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_register">Registrar</string>
+    <string name="action_update">Atualizar</string>
+    <string name="action_confirm">Confirmar</string>
+    <string name="action_clear">Limpar</string>
+    <string name="action_retry">Tentar novamente</string>
+
+    <!-- Tarefas -->
+    <string name="tasks_title">Tarefas do dia</string>
+    <string name="tasks_fab_new">Nova tarefa</string>
+    <string name="tasks_empty">Nenhuma tarefa por aqui ainda</string>
+    <string name="tasks_filter_all">Todas</string>
+    <string name="tasks_filter_today">Hoje</string>
+    <string name="tasks_filter_week">Semana</string>
+    <string name="tasks_filter_priority_all">Prioridade</string>
+    <string name="tasks_dialog_title_new">Nova tarefa</string>
+    <string name="tasks_dialog_title_edit">Editar tarefa</string>
+    <string name="tasks_field_title">Nome da atividade *</string>
+    <string name="tasks_field_description">Descrição</string>
+    <string name="tasks_field_talhao">Talhão ou área</string>
+    <string name="tasks_field_time">Hora prevista</string>
+    <string name="tasks_field_date">Data prevista</string>
+    <string name="date_picker_select">Selecionar data</string>
+    <string name="tasks_label_priority">Prioridade</string>
+    <string name="tasks_status_pending">Pendente</string>
+    <string name="tasks_status_in_progress">Em andamento</string>
+    <string name="tasks_status_completed">Finalizada</string>
+    <string name="tasks_status_cancelled">Cancelada</string>
+    <string name="tasks_priority_low">Baixa</string>
+    <string name="tasks_priority_medium">Média</string>
+    <string name="tasks_priority_high">Alta</string>
+
+    <!-- Atividades -->
+    <string name="activities_title">Atividades</string>
+    <string name="activities_tab_register">Registrar</string>
+    <string name="activities_tab_history">Histórico</string>
+    <string name="activities_field_type">Tipo de atividade</string>
+    <string name="activities_field_talhao">Talhão</string>
+    <string name="activities_field_start">Hora de início</string>
+    <string name="activities_field_end">Hora de fim</string>
+    <string name="activities_field_observations">Observações</string>
+    <string name="activities_validation_required">Preencha todos os campos obrigatórios</string>
+    <string name="activities_validation_time_order">A hora de fim deve ser posterior à hora de início</string>
+    <string name="activities_history_empty">Nenhuma atividade registrada</string>
+    <string name="activities_register_success">Atividade registrada</string>
+    <string name="activities_editing_banner">Editando atividade</string>
+    <string name="activities_linked_task">Vincular a tarefas</string>
+    <string name="activities_no_linked_task">Sem vínculo</string>
+    <string name="activities_no_open_tasks">Nenhuma tarefa em aberto</string>
+    <string name="activities_linked_count">%1$d tarefas vinculadas</string>
+    <string name="activities_finalize_hint">Ao registrar, as tarefas vinculadas serão marcadas como Finalizadas.</string>
+    <string name="action_remove">Remover</string>
+    <string name="activities_type_plantio">Plantio</string>
+    <string name="activities_type_colheita">Colheita</string>
+    <string name="activities_type_adubacao">Adubação</string>
+    <string name="activities_type_irrigacao">Irrigação</string>
+    <string name="activities_type_pulverizacao">Pulverização</string>
+    <string name="activities_type_outro">Outro</string>
+    <string name="activities_delete_confirm">Excluir registro de atividade?</string>
+    <string name="activities_detail_title">Detalhes da atividade</string>
+    <string name="activities_detail_type">Tipo</string>
+    <string name="activities_detail_talhao">Talhão</string>
+    <string name="activities_detail_date">Data</string>
+    <string name="activities_detail_schedule">Horário</string>
+    <string name="activities_detail_observations">Observações</string>
+    <string name="activities_detail_linked_tasks">Tarefas vinculadas</string>
+    <string name="activities_detail_no_observations">Sem observações</string>
+    <string name="activities_detail_no_linked_tasks">Nenhuma tarefa vinculada</string>
+    <string name="activities_detail_linked_count">%1$d tarefa vinculada</string>
+    <string name="activities_detail_linked_count_plural">%1$d tarefas vinculadas</string>
+    <string name="action_close">Fechar</string>
+
+    <!-- Clima -->
+    <string name="weather_title">Clima</string>
+    <string name="weather_search_hint">Buscar cidade</string>
+    <string name="weather_empty_hint">Busque uma cidade para ver o clima</string>
+    <string name="weather_detail_feels_like">Sensação</string>
+    <string name="weather_detail_humidity">Umidade</string>
+    <string name="weather_detail_wind">Vento</string>
+    <string name="weather_hourly_title">Próximas horas</string>
+    <string name="weather_source_live">Ao vivo</string>
+    <string name="weather_source_cache">Offline · atualizado em %1$s</string>
+    <string name="weather_error_offline_no_cache">Sem conexão e sem dados em cache. Conecte-se para sincronizar.</string>
+    <string name="weather_use_location">Usar minha localização</string>
+    <string name="weather_locating">Obtendo localização…</string>
+    <string name="weather_permission_denied">Permissão de localização negada. Busque uma cidade pelo nome.</string>
+    <string name="weather_or_search">ou busque outra cidade</string>
+
+    <!-- Time picker -->
+    <string name="time_picker_select">Selecionar hora</string>
+</resources>
